@@ -1,5 +1,6 @@
 add_library(tools STATIC
         printing_tools.cc
+        include/tools/is_palindrome.hh
 )
 
 target_include_directories(tools PUBLIC

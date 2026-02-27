@@ -21,3 +21,5 @@ include(GoogleTest)
 
 add_subdirectory(utils)
 add_subdirectory(easy)
+add_subdirectory(medium)
+add_subdirectory(fractals)

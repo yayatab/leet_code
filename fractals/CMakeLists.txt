@@ -11,6 +11,12 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(SFML)
 
-add_executable(FractalGenerator main.cc)
+add_executable(fractal_check main.cc
+        fractal_core/fractal_engine.cc
+        fractal_core/fractal_engine.h)
 
-target_link_libraries(FractalGenerator PRIVATE sfml-graphics sfml-window sfml-system)
+target_link_libraries(fractal_check PRIVATE sfml-graphics sfml-window sfml-system)
+
+add_subdirectory(app)
+add_subdirectory(fractal_core)
+add_subdirectory(renderer_cpu)
